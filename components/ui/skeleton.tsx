@@ -1,0 +1,20 @@
+"use client";
+
+import { cn } from "cn";
+
+function Skeleton({
+  className,
+  ...props
+}: React.HTMLAttributes<HTMLDivElement>) {
+  return (
+    <div
+      className={cn(
+        "animate-pulse rounded-lg bg-muted",
+        className
+      )}
+      {...props}
+    />
+  );
+}
+
+export { Skeleton };
